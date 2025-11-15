@@ -76,7 +76,7 @@ Below is the complete flow of the AI Chatbot system — from user interaction to
 
 ![AI Chatbot Flowchart – Dark Mode](assets/images/flowchart-dark.png)
 
-
+```
   subgraph Frontend_Scripts
     C --> F[frontend/js/signup.js]
     D --> G[frontend/js/login.js]

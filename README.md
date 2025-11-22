@@ -118,35 +118,79 @@ Below is the complete flow of the AI Chatbot system — from user interaction to
 
 ```
 ai-chatbot-project/
+│
 ├── assets/
-│ └── images/
-│ └── flowchart-dark.png
-├── frontend/
-│ ├── index.html
-│ ├── login.html
-│ ├── signup.html
-│ ├── chat.html
-│ ├── css/
-│ │ └── style.css
-│ └── js/
-│ ├── login.js
-│ ├── signup.js
-│ └── chat.js
-├── backend/
-│ ├── config/
-│ │ └── db.js
-│ ├── controllers/
-│ │ ├── authController.js
-│ │ └── chatController.js
-│ ├── models/
-│ │ └── User.js
-│ ├── routes/
-│ │ ├── authRoutes.js
-│ │ └── chatRoutes.js
-│ ├── middleware/
-│ │ └── authMiddleware.js
-│ └── server.js
-```
+│   └── images/
+│       └── flowchart-dark.png
+│
+├── client/                     # React Frontend
+│   ├── index.html
+│   ├── package.json
+│   ├── vite.config.js
+│   │
+│   ├── src/
+│   │   ├── assets/
+│   │   │   └── images/
+│   │   │       └── flowchart-dark.png
+│   │   │
+│   │   ├── components/
+│   │   │   ├── auth/
+│   │   │   │   ├── LoginForm.jsx
+│   │   │   │   └── SignupForm.jsx
+│   │   │   │
+│   │   │   ├── chat/
+│   │   │   │   ├── ChatBox.jsx
+│   │   │   │   ├── Message.jsx
+│   │   │   │   └── ChatInput.jsx
+│   │   │   │
+│   │   │   ├── layout/
+│   │   │   │   └── Navbar.jsx
+│   │   │   │
+│   │   │   └── ui/
+│   │   │       ├── Button.jsx
+│   │   │       ├── Input.jsx
+│   │   │       └── Card.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── LoginPage.jsx
+│   │   │   ├── SignupPage.jsx
+│   │   │   └── ChatPage.jsx
+│   │   │
+│   │   ├── styles/
+│   │   │   ├── bootstrap.min.css
+│   │   │   ├── auth.css
+│   │   │   ├── chat.css
+│   │   │   ├── layout.css
+│   │   │   └── ui.css
+│   │   │
+│   │   ├── App.jsx
+│   │   └── index.jsx
+│   │
+│   └── README.md
+│
+├── server/                     # Backend Node.js
+│   ├── config/
+│   │   └── db.js
+│   │
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   └── chatController.js
+│   │
+│   ├── models/
+│   │   └── User.js
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   └── chatRoutes.js
+│   │
+│   ├── middleware/
+│   │   └── authMiddleware.js
+│   │
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
+
 
 ---
 
